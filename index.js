@@ -3,4 +3,6 @@ function postComment() {
   var comment = document.getElementById("commentText").value;
   //insert comment into "comments" div in this format:
   //<div class="comment"><p>comment</p><p>Posted By: <span class="commenter">commenter</span></p></div>
+ 
+  var commentTemplate = '<div class="comment"><p><%= comment %></p><p>Posted By: <span class="commenter"><%= commenter %></span></p></div>';
 }
